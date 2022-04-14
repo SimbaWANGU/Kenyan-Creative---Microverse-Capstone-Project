@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 782px){
+@media (max-width: 782px) {
   .header {
     background-color: rgba(220, 220, 220, 0.3);
   }
@@ -62,7 +62,7 @@ body {
     text-decoration: none;
     font-size: 35px;
   }
-  
+
   .menu_item-mobile {
     z-index: 2;
   }
@@ -74,7 +74,7 @@ body {
   .mobile_background {
     width: 80%;
   }
-  
+
   .close_icon {
     width: 10vw;
     height: 70px;
@@ -82,7 +82,7 @@ body {
     margin: 10px;
     left: -50px;
   }
-  
+
   .navlist-mobile {
     display: flex;
     flex-direction: column;
@@ -93,9 +93,17 @@ body {
     margin-top: 100px;
   }
 
-  .navlist-item-mobile > a:active {
-    text-decoration: none;
-    color: navy;
+  .card-container > div > img {
+    height: 20%;
+    width: 20%;
+    margin: auto;
+  }
+
+  .speaker-container > div > img {
+    width: 30%;
+    margin: auto;
+    position: relative;
+    top: 3px;
   }
 
   .header > nav > a > img {
@@ -175,12 +183,6 @@ body {
     padding: 10px;
   }
 
-  .card-container > div > img {
-    height: 20%;
-    width: 20%;
-    margin: auto;
-  }
-
   .card-container > div > h4 {
     margin: auto;
     font-size: 15px;
@@ -191,18 +193,25 @@ body {
     line-height: 40px;
   }
 
+  .main_program-container > p {
+    color: beige;
+    text-decoration: underline 1px;
+    margin: 5%;
+  }
+
+  .speaker-cards > p {
+    font-size: 12px;
+    margin: 5% 0 0 0;
+    display: flex;
+    margin-top: 2px;
+  }
+
   .card-container > div > p {
     margin: auto;
     font-size: 12px;
     color: beige;
     padding: 5px;
     flex: 2;
-  }
-
-  .main_program-container > p {
-    color: beige;
-    text-decoration: underline 1px;
-    margin: 5%;
   }
 
   .main_program-container > button {
@@ -281,22 +290,8 @@ body {
     background-repeat: no-repeat;
   }
 
-  .speaker-container > div > img {
-    width: 30%;
-    margin: auto;
-    position: relative;
-    top: 3px;
-  }
-
   .speaker-cards {
     margin: 1px 0 0 10%;
-  }
-
-  .speaker-cards > h4 {
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 1px;
-    margin-top: 1px;
   }
 
   .speaker-cards > h5 {
@@ -316,11 +311,16 @@ body {
     position: relative;
   }
 
-  .speaker-cards > p {
-    font-size: 12px;
-    margin: 5% 0 0 0;
+  .partners-section {
+    display: none;
+  }
+
+  .grid-container {
     display: flex;
-    margin-top: 2px;
+  }
+
+  .footer {
+    display: none;
   }
 }
 
@@ -352,7 +352,7 @@ body {
     margin: 0 0 0 60%;
   }
 
-  .socials_icons > li{
+  .socials_icons > li {
     margin: auto;
     margin: 10px 10px 10px 10px;
     color: beige;
@@ -382,10 +382,27 @@ body {
   }
 
   .logo {
-    margin: -5% 120% 0 -75%;
+    margin: 0 120% 0 -75%;
   }
 
-  .logo > img {
+  .col > img {
+    height: 80%;
+  }
+
+  .footer > img {
+    height: 20%;
+    width: 20%;
+    margin: 0 0 0 30%;
+    padding: 3%;
+  }
+
+  .footer > p {
+    font-size: 16px;
+    color: #2e2e2b;
+    margin: 9% 5% 1% 1%;
+  }
+
+  .logo > a > img {
     height: 50px;
     width: 50px;
   }
@@ -393,6 +410,20 @@ body {
   .navbar-items {
     width: 20%;
     margin: 0 20px 0 20px;
+    padding: 20px 0 0 0;
+  }
+
+  .main_program-container > p {
+    color: beige;
+    text-decoration: underline 1px;
+    margin: 5%;
+  }
+
+  .speaker-cards > p {
+    font-size: 12px;
+    margin: 5% 0 0 0;
+    display: flex;
+    margin-top: 2px;
   }
 
   .navbar-items > a > p {
@@ -406,7 +437,7 @@ body {
     font-size: 16px;
     color: darkgoldenrod;
   }
-  
+
   .header > h2 {
     margin: 7% 0 0 20%;
     font-weight: 300;
@@ -414,7 +445,7 @@ body {
     letter-spacing: 0.001rem;
     font-size: 36px;
   }
-  
+
   .header > h1 {
     font-weight: 700;
     color: darkgoldenrod;
@@ -428,7 +459,7 @@ body {
     margin: 0 0 0 20%;
     width: 45%;
   }
-  
+
   .header > h3 {
     font-weight: 700;
     color: dimgrey;
@@ -436,7 +467,7 @@ body {
     letter-spacing: 0.001rem;
     font-size: 24px;
   }
-  
+
   .header > h4 {
     font-weight: 300;
     color: dimgrey;
@@ -444,13 +475,13 @@ body {
     font-size: 18px;
     margin: 1% 10px 10px 20%;
   }
-  
+
   .main_program {
     display: flex;
     background-color: #2e2e2b;
     text-align: center;
   }
-  
+
   .main_program-container > h2 {
     color: beige;
     margin: 32px 32px 0 32px;
@@ -461,7 +492,7 @@ body {
     font-weight: 600;
     text-align: center;
   }
-  
+
   .main_program-container > hr {
     background-color: darkgoldenrod;
     width: 3%;
@@ -476,7 +507,7 @@ body {
     margin: auto;
     padding: 10px 10px 10px 10px;
   }
-  
+
   .card-container > div {
     margin: 2px;
     background-color: rgba(128, 120, 120, 0.3);
@@ -487,13 +518,20 @@ body {
     width: 20%;
     text-align: center;
   }
-  
+
+  .speaker-cards > h4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+
   .card-container > div > img {
     height: 20%;
     width: 20%;
     margin: auto;
   }
-  
+
   .card-container > div > h4 {
     font-size: 15px;
     color: darkgoldenrod;
@@ -503,7 +541,7 @@ body {
     line-height: 40px;
     margin: auto;
   }
-  
+
   .card-container > div > p {
     margin: auto;
     font-size: 12px;
@@ -512,12 +550,6 @@ body {
     flex: 2;
   }
 
-  .main_program-container > p {
-    color: beige;
-    text-decoration: underline 1px;
-    margin: 5%;
-  }
-  
   .featured-program-container > h2 {
     margin: 32px 32px 0 32px;
     justify-content: center;
@@ -527,7 +559,7 @@ body {
     font-size: 20px;
     font-weight: 600;
   }
-  
+
   .featured-program-container > hr {
     background-color: darkgoldenrod;
     width: 3%;
@@ -544,7 +576,7 @@ body {
     margin: auto;
     margin-left: 13%;
   }
-  
+
   .speaker-container > div {
     margin: 20px 1% 10px 10%;
     border-radius: 5px;
@@ -556,32 +588,25 @@ body {
     background-size: 20% 40%;
     background-repeat: no-repeat;
   }
-  
+
   .speaker-container > div > img {
     width: 40%;
     height: 80%;
     position: relative;
     top: 5px;
   }
-  
+
   .speaker-cards {
     margin: 1px 0 0 10%;
   }
-  
-  .speaker-cards > h4 {
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 1px;
-    margin-top: 1px;
-  }
-  
+
   .speaker-cards > h5 {
     color: darkgoldenrod;
     font-size: 14px;
     font-style: italic;
     margin-bottom: 1px;
   }
-  
+
   .speaker-cards > hr {
     background-color: rgba(128, 120, 120, 0.3);
     width: 10%;
@@ -591,11 +616,43 @@ body {
     left: -45%;
     position: relative;
   }
-  
-  .speaker-cards > p {
-    font-size: 12px;
-    margin: 5% 0 0 0;
+
+  .featured-program-container > button {
+    display: none;
+  }
+
+  .partners-section {
+    margin: 15% 0 0 0;
+    background-color: #2e2e2b;
+    text-align: center;
+  }
+
+  .partners-section > h2 {
+    padding: 30px 0 0 0;
+    color: beige;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .partners-section > hr {
+    background-color: darkgoldenrod;
+    width: 3%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .grid-container {
     display: flex;
-    margin-top: 2px;
+    flex-direction: row;
+    background-color: #2e2e2b;
+    height: 20%;
+    margin: 20px 0 0 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+    margin: 0 0 0 0;
   }
 }

@@ -45,37 +45,36 @@ const speakers = [{
 const speakerContainer = document.getElementById('speaker-container');
 
 speakers.forEach((speaker) => {
-  const speakerContainerItem = document.createElement('div')
-  speakerContainerItem.classList.add('speaker-container-item')
+  const speakerContainerItem = document.createElement('div');
+  speakerContainerItem.classList.add('speaker-container-item');
 
-  const img = document.createElement('img')
+  const img = document.createElement('img');
   img.setAttribute('alt', ' ');
   img.setAttribute('src', speaker.image);
   speakerContainerItem.appendChild(img);
 
-  const speakerCards = document.createElement('div')
-  speakerCards.classList.add('speaker-cards')
+  const speakerCards = document.createElement('div');
+  speakerCards.classList.add('speaker-cards');
 
-  const h4Title = document.createElement('h4')
-  h4Title.innerText = speaker.name
-  speakerCards.appendChild(h4Title)
+  const h4Title = document.createElement('h4');
+  h4Title.innerText = speaker.name;
+  speakerCards.appendChild(h4Title);
 
-  const h5Title = document.createElement('h5')
-  h5Title.innerText = speaker.occupation
-  speakerCards.appendChild(h5Title)
+  const h5Title = document.createElement('h5');
+  h5Title.innerText = speaker.occupation;
+  speakerCards.appendChild(h5Title);
 
-  const hr = document.createElement('hr')
-  speakerCards.appendChild(hr)
+  const hr = document.createElement('hr');
+  speakerCards.appendChild(hr);
 
-  const paragraph = document.createElement('p')
-  paragraph.innerText = speaker.description
-  speakerCards.appendChild(paragraph)
+  const paragraph = document.createElement('p');
+  paragraph.innerText = speaker.description;
+  speakerCards.appendChild(paragraph);
 
+  speakerContainerItem.appendChild(speakerCards);
 
-  speakerContainerItem.appendChild(speakerCards)
-  
-  speakerContainer.appendChild(speakerContainerItem)
-})
+  speakerContainer.appendChild(speakerContainerItem);
+});
 
 document.querySelector('.hamburger_icon').addEventListener('click', () => {
   document.querySelector('.menu_item_container').classList.toggle('show');
