@@ -23,7 +23,7 @@ body {
   }
 
   .socials {
-    background-color: #2e2e2b;
+    display: none;
   }
 
   .socials_icons {
@@ -35,8 +35,76 @@ body {
     display: none;
   }
 
+  .menu_item_container {
+    position: fixed;
+    background-color: darkgoldenrod;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.9;
+    overflow: hidden;
+    filter: blur(0) !important;
+  }
+
+  .navlist-item-mobile > a {
+    font-weight: 300;
+    font-size: 30px;
+    margin: 2px 0 2px 0;
+    color: #fff;
+    text-decoration: none;
+    filter: none !important;
+  }
+
+  .navlist-item-mobile > a:active {
+    color: navy;
+    text-decoration: none;
+    font-size: 35px;
+  }
+  
+  .menu_item-mobile {
+    z-index: 2;
+  }
+
+  .show {
+    display: none;
+  }
+
+  .mobile_background {
+    width: 80%;
+  }
+  
+  .close_icon {
+    width: 10vw;
+    height: 70px;
+    float: right;
+    margin: 10px;
+    left: -50px;
+  }
+  
+  .navlist-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+    list-style-type: none;
+    margin-top: 100px;
+  }
+
+  .navlist-item-mobile > a:active {
+    text-decoration: none;
+    color: navy;
+  }
+
+  .header > nav > a > img {
+    height: 40px;
+    width: 40px;
+  }
+
   .header > h2 {
-    margin-top: 20%;
+    margin: 20% 0 0 5%;
     font-weight: 500;
     color: darkgoldenrod;
     letter-spacing: 0.001rem;
@@ -46,15 +114,21 @@ body {
   .header > h1 {
     font-weight: 700;
     color: darkgoldenrod;
-    letter-spacing: 0.001rem
+    letter-spacing: 0.001rem;
+    margin: 0 0 0 5%;
   }
 
   .header > h3 {
     font-weight: 700;
     color: dimgrey;
-    margin: 10px;
+    margin: 10px 10px 10px 5%;
     letter-spacing: 0.001rem;
     font-size: 24px;
+  }
+
+  .header .card_container {
+    margin: 0 5% 0 5%;
+    width: 85%;
   }
 
   .header > h4 {
@@ -62,7 +136,7 @@ body {
     color: dimgrey;
     letter-spacing: 0.001rem;
     font-size: 18px;
-    margin: 10px;
+    margin: 10px 10px 10px 5%;
   }
 
   .main_program {
@@ -93,7 +167,7 @@ body {
   }
 
   .card-container > div {
-    margin: 10px;
+    margin: 2px 10px 2px 10px;
     background-color: rgba(128, 120, 120, 0.3);
     border-radius: 5px;
     display: flex;
@@ -131,8 +205,46 @@ body {
     margin: 5%;
   }
 
+  .main_program-container > button {
+    border: 1px solid darkgoldenrod;
+    margin: 40px 20% 40px 20%;
+    width: 60%;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: darkgoldenrod;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: white;
+    transition-duration: 0.4s;
+    text-decoration: none;
+  }
+
   .hide {
     display: none;
+  }
+
+  .featured-program-container > button {
+    border: 1px solid darkgoldenrod;
+    margin: 40px 20% 40px 20%;
+    width: 60%;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: darkgoldenrod;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: white;
+    transition-duration: 0.4s;
+    text-decoration: none;
   }
 
   .featured-program-container > h2 {
@@ -213,6 +325,23 @@ body {
 }
 
 @media (min-width: 782px) {
+  .main_program-container > button {
+    display: none;
+    text-decoration: none;
+  }
+
+  .featured_program-container > button {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: none !important;
+  }
+
+  .header > nav > a {
+    display: none;
+  }
+
   .socials {
     background-color: #2e2e2b;
   }
