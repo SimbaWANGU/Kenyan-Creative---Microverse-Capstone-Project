@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;300;400;500&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  list-style: none;
+}
+
+body {
+  background: #f6f6f6;
+  margin: 0;
+}
+
+.header {
+  background-image: url('../assets/images/header_background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 782px){
+  .header {
+    background-color: rgba(220, 220, 220, 0.3);
+  }
+
+  .socials {
+    background-color: #2e2e2b;
+  }
+
+  .socials_icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar > ul {
+    display: none;
+  }
+
+  .header > h2 {
+    margin-top: 20%;
+    font-weight: 500;
+    color: darkgoldenrod;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+  }
+
+  .header > h1 {
+    font-weight: 700;
+    color: darkgoldenrod;
+    letter-spacing: 0.001rem
+  }
+
+  .header > h3 {
+    font-weight: 700;
+    color: dimgrey;
+    margin: 10px;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+  }
+
+  .header > h4 {
+    font-weight: 300;
+    color: dimgrey;
+    letter-spacing: 0.001rem;
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .main_program {
+    display: flex;
+    background-color: #2e2e2b;
+  }
+
+  .main_program-container > h2 {
+    color: beige;
+    margin: 32px 32px 0 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .main_program-container > hr {
+    background-color: darkgoldenrod;
+    width: 20%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-container > div {
+    margin: 10px;
+    background-color: rgba(128, 120, 120, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .card-container > div > img {
+    height: 20%;
+    width: 20%;
+    margin: auto;
+  }
+
+  .card-container > div > h4 {
+    margin: auto;
+    font-size: 15px;
+    color: darkgoldenrod;
+    font-weight: 700;
+    padding: 10px;
+    width: 35%;
+    line-height: 40px;
+  }
+
+  .card-container > div > p {
+    margin: auto;
+    font-size: 12px;
+    color: beige;
+    padding: 5px;
+    flex: 2;
+  }
+
+  .main_program-container > p {
+    color: beige;
+    text-decoration: underline 1px;
+    margin: 5%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .featured-program-container > h2 {
+    margin: 32px 32px 0 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    letter-spacing: 0.001rem;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .featured-program-container > hr {
+    background-color: darkgoldenrod;
+    width: 20%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .speaker-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .speaker-container > div {
+    margin: 20px 10px 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-image: url('../assets/images/checker.png');
+    background-position: left top;
+    background-size: 15%;
+    background-repeat: no-repeat;
+  }
+
+  .speaker-container > div > img {
+    width: 30%;
+    margin: auto;
+    position: relative;
+    top: 3px;
+  }
+
+  .speaker-cards {
+    margin: 1px 0 0 10%;
+  }
+
+  .speaker-cards > h4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+
+  .speaker-cards > h5 {
+    color: darkgoldenrod;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 1px;
+  }
+
+  .speaker-cards > hr {
+    background-color: rgba(128, 120, 120, 0.3);
+    width: 10%;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    height: 2px;
+    left: -45%;
+    position: relative;
+  }
+
+  .speaker-cards > p {
+    font-size: 12px;
+    margin: 5% 0 0 0;
+    display: flex;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 782px) {
+  .socials {
+    background-color: #2e2e2b;
+  }
+
+  .socials_icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 60%;
+  }
+
+  .socials_icons > li{
+    margin: auto;
+    margin: 10px 10px 10px 10px;
+    color: beige;
+    font-size: 10px;
+  }
+
+  .header {
+    background-color: rgba(220, 220, 220, 0.3);
+    padding: 0 0 5% 0;
+  }
+
+  .navbar {
+    margin-top: 0;
+    background-color: white;
+    height: 10%;
+  }
+
+  .navbar > span {
+    display: none;
+  }
+
+  .navbar > ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 10%;
+  }
+
+  .logo {
+    margin: -5% 120% 0 -75%;
+  }
+
+  .logo > img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar-items {
+    width: 20%;
+    margin: 0 20px 0 20px;
+  }
+
+  .navbar-items > a > p {
+    font-size: 14px;
+    color: #2e2e2b;
+    margin-top: -7px;
+    text-decoration: none;
+  }
+
+  .navbar-items > a > p :active {
+    font-size: 16px;
+    color: darkgoldenrod;
+  }
+  
+  .header > h2 {
+    margin: 7% 0 0 20%;
+    font-weight: 300;
+    color: darkgoldenrod;
+    letter-spacing: 0.001rem;
+    font-size: 36px;
+  }
+  
+  .header > h1 {
+    font-weight: 700;
+    color: darkgoldenrod;
+    letter-spacing: 0.001rem;
+    margin: 0 0 0 20%;
+    font-size: 48px;
+    width: 30%;
+  }
+
+  .header .card_container {
+    margin: 0 0 0 20%;
+    width: 45%;
+  }
+  
+  .header > h3 {
+    font-weight: 700;
+    color: dimgrey;
+    margin: 3% 10px 10px 20%;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+  }
+  
+  .header > h4 {
+    font-weight: 300;
+    color: dimgrey;
+    letter-spacing: 0.001rem;
+    font-size: 18px;
+    margin: 1% 10px 10px 20%;
+  }
+  
+  .main_program {
+    display: flex;
+    background-color: #2e2e2b;
+    text-align: center;
+  }
+  
+  .main_program-container > h2 {
+    color: beige;
+    margin: 32px 32px 0 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .main_program-container > hr {
+    background-color: darkgoldenrod;
+    width: 3%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .card-container > div {
+    margin: 2px;
+    background-color: rgba(128, 120, 120, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .card-container > div > img {
+    height: 20%;
+    width: 20%;
+    margin: auto;
+  }
+  
+  .card-container > div > h4 {
+    font-size: 15px;
+    color: darkgoldenrod;
+    font-weight: 700;
+    padding: 10px;
+    width: 60%;
+    line-height: 40px;
+    margin: auto;
+  }
+  
+  .card-container > div > p {
+    margin: auto;
+    font-size: 12px;
+    color: beige;
+    padding: 5px;
+    flex: 2;
+  }
+
+  .main_program-container > p {
+    color: beige;
+    text-decoration: underline 1px;
+    margin: 5%;
+  }
+  
+  .featured-program-container > h2 {
+    margin: 32px 32px 0 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    letter-spacing: 0.001rem;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .featured-program-container > hr {
+    background-color: darkgoldenrod;
+    width: 3%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .speaker-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40% 40%;
+    grid-column-gap: 3%;
+    grid-row-gap: 1%;
+    margin: auto;
+    margin-left: 13%;
+  }
+  
+  .speaker-container > div {
+    margin: 20px 1% 10px 10%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-image: url('../assets/images/checker.png');
+    background-position: left top;
+    background-size: 20% 40%;
+    background-repeat: no-repeat;
+  }
+  
+  .speaker-container > div > img {
+    width: 40%;
+    height: 80%;
+    position: relative;
+    top: 5px;
+  }
+  
+  .speaker-cards {
+    margin: 1px 0 0 10%;
+  }
+  
+  .speaker-cards > h4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+  
+  .speaker-cards > h5 {
+    color: darkgoldenrod;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 1px;
+  }
+  
+  .speaker-cards > hr {
+    background-color: rgba(128, 120, 120, 0.3);
+    width: 10%;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    height: 2px;
+    left: -45%;
+    position: relative;
+  }
+  
+  .speaker-cards > p {
+    font-size: 12px;
+    margin: 5% 0 0 0;
+    display: flex;
+    margin-top: 2px;
+  }
+}

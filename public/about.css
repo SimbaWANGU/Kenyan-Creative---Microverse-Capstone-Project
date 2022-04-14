@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;300;400;500&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  list-style: none;
+}
+
+body {
+  background: #f6f6f6;
+  margin: 0;
+}
+
+.header {
+  background-image: url('../assets/images/header_background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 782px){
+  .header {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .socials {
+    display: none;
+  }
+  
+  .navbar > ul {
+    display: none;
+  }
+
+  .header > h2 {
+    margin-top: 20%;
+    font-weight: 500;
+    color: darkgoldenrod;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+  }
+
+  .header > h1 {
+    font-weight: 700;
+    color: darkgoldenrod;
+    letter-spacing: 0.001rem;
+    font-size: 32px;
+  }
+
+  .header > p{
+    color: dimgrey;
+    margin: 10px 2.5% 10px 2.5%;
+    letter-spacing: 0.001rem;
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .header > h4 {
+    font-weight: 700;
+    letter-spacing: 0.001rem;
+    font-size: 14px;
+    margin: 10px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .kenyan-craetives-logo {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .kenyan-craetives-logo > h2 {
+    margin-top: 20%;
+    font-weight: 500;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+  }
+
+  .kenyan-craetives-logo > hr {
+    background-color: darkgoldenrod;
+    width: 20%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .kenyan-craetives-logo > p {
+    margin: auto;
+    font-size: 12px;
+    padding: 5px;
+    width: 65%;
+  }
+
+  .kenyan-craetives-logo > span {
+    display: inline-block;
+    border: 1px solid #555;
+    width: 80%;
+    padding: 10px;
+    margin: 20px 10% 20px 10%;
+  }
+
+  .kenyan-craetives-logo > span > img {
+    height: 20%;
+    width: 50%;
+    margin: auto;
+  }
+  .past-KC-summit {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .past-KC-summit > h2 {
+    margin: 20% 20% 5% 20%;
+    font-weight: 500;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+    width: 60%;
+  }
+
+  .past-KC-summit > hr {
+    background-color: darkgoldenrod;
+    width: 20%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .past-KC-summit > p {
+    margin: auto;
+    font-size: 12px;
+    padding: 5px;
+    width: 65%;
+  }
+
+  .past-KC-summit .past-kc-summit-1 {
+    
+    background: rgba(94, 69, 5, 0.9) url("../assets/images/past-kc-summit-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+
+  .past-kc-summit-1 > h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 15% 10% 1% 10%;
+  }
+
+  .past-kc-summit-1 > p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    
+  }
+
+  .past-KC-summit .past-kc-summit-2 {
+    
+    background: rgba(94, 69, 5, 0.9) url("../assets/images/past-kc-summit-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+
+  .past-kc-summit-2 > h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 15% 10% 1% 10%;
+  }
+
+  .past-kc-summit-2 > p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    
+  }
+
+  .partners-section {
+    text-align: center;
+    background-color: #2e2e2b;
+    padding-bottom: 20px;
+  }
+
+  .partners-section > h2 {
+    margin: 20% 20% 5% 20%;
+    font-weight: 500;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+    width: 60%;
+    color: beige;
+    padding: 20px 20px 5px 20px;
+  }
+
+  .partners-section > hr {
+    background-color: darkgoldenrod;
+    width: 20%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 3%;
+    grid-row-gap: 15%;
+  }
+
+  .col:nth-child(-1n + 3) {
+    grid-column: span 4;
+  }
+  .col:nth-last-child(2) {
+    grid-row-start: 2;
+    grid-column: 3 / span 4;
+  }
+  .col:nth-last-child(1) {
+    grid-row-start: 2;
+    grid-column: 7 / span 4;
+  }
+
+  .col > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .footer > img {
+    height: 20%;
+    width: 20%;
+    margin: 5% 5% 5% 16%;
+  }
+
+  .footer > p {
+    font-size: 12px;
+    margin: 9% 5% 5% 1%;
+  }
+}
+
+@media (min-width: 782px){
+  .header {
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.3);
+    padding: 0 0 5% 0;
+  }
+
+  .socials {
+    background-color: #2e2e2b;
+  }
+
+  .socials_icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 60%;
+  }
+
+  .socials_icons > li{
+    margin: auto;
+    margin: 10px 10px 10px 10px;
+    color: beige;
+    font-size: 10px;
+  }
+
+  .header {
+    background-color: rgba(220, 220, 220, 0.3);
+    padding: 0 0 5% 0;
+  }
+
+  .navbar {
+    margin-top: 0;
+    background-color: white;
+    height: 10%;
+  }
+
+  .navbar > span {
+    display: none;
+  }
+
+  .navbar > ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 10%;
+  }
+
+  .logo {
+    margin: -5% 120% 0 -75%;
+  }
+
+  .logo > img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar-items {
+    width: 20%;
+    margin: 0 20px 0 20px;
+  }
+
+  .navbar-items > a > p {
+    font-size: 14px;
+    color: #2e2e2b;
+    margin-top: -7px;
+    text-decoration: none;
+  }
+
+  .navbar-items > a > p :active {
+    font-size: 16px;
+    color: darkgoldenrod;
+  }
+
+  .header > h2 {
+    display: none;
+  }
+
+  .header > h1 {
+    font-weight: 700;
+    color: darkgoldenrod;
+    letter-spacing: 0.001rem;
+    font-size: 48px;
+    margin: auto;
+    margin-top: 7%;
+    width: 40%;
+  }
+
+  .card-container {
+    width: 60%;
+    margin: 3% 0 0 20%;
+  }
+
+  .header > p{
+    color: dimgrey;
+    margin: 5% 2.5% 10px 2.5%;
+    letter-spacing: 0.001rem;
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .header > h4 {
+    font-weight: 700;
+    letter-spacing: 0.001rem;
+    font-size: 14px;
+    margin: 10px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .kenyan-craetives-logo {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .kenyan-craetives-logo > h2 {
+    margin-top: 10%;
+    font-weight: 700;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+  }
+
+  .kenyan-craetives-logo > hr {
+    background-color: darkgoldenrod;
+    width: 3%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .kenyan-craetives-logo > p {
+    margin: auto;
+    font-size: 12px;
+    padding: 5px;
+    width: 40%;
+  }
+
+  .kenyan-craetives-logo > span {
+    display: inline-block;
+    border: 1px solid rgb(170, 168, 168);
+    border-radius: 5px;
+    width: 25%;
+    height: 25%;
+    padding: 10px;
+    margin: 20px 10% 20px 10%;
+  }
+
+  .kenyan-craetives-logo > span > img {
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    margin-top: 4%;
+  }
+
+  .past-KC-summit {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .past-KC-summit > h2 {
+    margin: 10% 20% 1% 20%;
+    font-weight: 700;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+    width: 60%;
+  }
+
+  .past-KC-summit > hr {
+    background-color: darkgoldenrod;
+    width: 3%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .past-KC-summit > p {
+    margin: auto;
+    font-size: 12px;
+    padding: 5px;
+    width: 65%;
+  }
+
+  .past-kc-summit-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .past-KC-summit .past-kc-summit-1 {
+    background: rgba(94, 69, 5, 0.9) url("../assets/images/past-kc-summit-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35%;
+    width: 25%;
+    margin: 5% 10px 10px 23.75%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+
+  .past-kc-summit-1 > h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 15% 10% 1% 10%;
+  }
+
+  .past-kc-summit-1 > p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    
+  }
+
+  .past-KC-summit .past-kc-summit-2 {
+    
+    background: rgba(94, 69, 5, 0.9) url("../assets/images/past-kc-summit-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35%;
+    width: 25%;
+    margin: 5% 10px 10px 2%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+
+  .past-kc-summit-2 > h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 15% 10% 1% 10%;
+  }
+
+  .past-kc-summit-2 > p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    
+  }
+
+  .partners-section {
+    text-align: center;
+    background-color: #2e2e2b;
+    padding-bottom: 20px;
+    display: none;
+  }
+
+  .partners-section > h2 {
+    margin: 20% 20% 5% 20%;
+    font-weight: 500;
+    letter-spacing: 0.001rem;
+    font-size: 24px;
+    width: 60%;
+    color: beige;
+    padding: 20px 20px 5px 20px;
+  }
+
+  .partners-section > hr {
+    background-color: darkgoldenrod;
+    width: 20%;
+    margin-bottom: 30px;
+    height: 5px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 3%;
+    grid-row-gap: 15%;
+  }
+
+  .col:nth-child(-1n + 3) {
+    grid-column: span 4;
+  }
+  .col:nth-last-child(2) {
+    grid-row-start: 2;
+    grid-column: 3 / span 4;
+  }
+  .col:nth-last-child(1) {
+    grid-row-start: 2;
+    grid-column: 7 / span 4;
+  }
+
+  .col > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #2e2e2b;
+    margin: 13% 0 0 0;
+  }
+
+  .footer > img {
+    height: 20%;
+    width: 20%;
+    margin: 0 0 0 30%;
+    padding: 3%;
+  }
+
+  .footer > p {
+    font-size: 16px;
+    color: beige;
+    margin: 9% 5% 1% 1%;
+  }
+}
