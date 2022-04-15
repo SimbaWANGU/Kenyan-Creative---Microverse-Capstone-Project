@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-Not avalible 
+The live demo for the project can be found in the following Looom Link https://www.loom.com/share/446a1f7233ab4f369ee53b49dc18b676
 
 
 ## Getting Started
@@ -24,19 +24,17 @@ Not avalible
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Node needs to be installed so as to download the node modules
 
 ### Setup
 - Set up the linter
+
 ### Install
+- Clone repository from github
 
 ### Usage
+- Th euser can navigate between two different pages i.e Home page and About page in both mobile and website versions
 
-### Run tests
-
-### Deployment
-
-
-## Authors
 
 👤 **Simba Eugene**
 
@@ -58,9 +56,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration 
-- etc
+- The design has been inspired by Cindy Shin design on Behance.
 
 ## 📝 License
 
