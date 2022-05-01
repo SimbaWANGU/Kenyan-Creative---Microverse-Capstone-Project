@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-The live demo for the project can be found in the following Looom Link https://www.loom.com/share/446a1f7233ab4f369ee53b49dc18b676
+The live demo for the project can be found in the following Looom [Link](https://www.loom.com/share/c6d580c952494d69bb2837f32584f9e5)
 
 
 ## Getting Started
@@ -34,6 +34,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 - Th euser can navigate between two different pages i.e Home page and About page in both mobile and website versions
+
+### Deployment
+- The live link for the project can be found [here](https://simbawangu.github.io/Kenyan-Creative---Microverse-Capstone-Project/public/index.html)
 
 
 👤 **Simba Eugene**
