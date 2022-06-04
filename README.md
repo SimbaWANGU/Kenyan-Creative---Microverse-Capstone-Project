@@ -24,16 +24,22 @@ The live demo for the project can be found in the following Looom [Link](https:/
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-- Node needs to be installed so as to download the node modules
+- Create Github repository
+- Have VSCode or choice text editor installed
+- Have Git installed
+- HTML/CSS/JS Linters
+- Good github workflow
+  
 
 ### Setup
-- Set up the linter
-
-### Install
-- Clone repository from github
+- `Git clone https://github.com/SimbaWANGU/Kenyan-Creative---Microverse-Capstone-Project.git`
+- `cd Kenyan-Creative---Microverse-Capstone-Project`
+- open file in preferred editor
+- Run `npm install` to install dependencies
+- HTML, CSS, JS Linter configuration - https://github.com/microverseinc/linters-config/tree/master/html-css-js
 
 ### Usage
-- Th euser can navigate between two different pages i.e Home page and About page in both mobile and website versions
+- The user can navigate between two different pages i.e Home page and About page in both mobile and website versions
 
 ### Deployment
 - The live link for the project can be found [here](https://simbawangu.github.io/Kenyan-Creative---Microverse-Capstone-Project/public/index.html)
@@ -41,8 +47,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Simba Eugene**
 
-- GitHub: [@S-imba](https://github.com/S-imba)
-- Twitter: [@Simb_erella](https://twitter.com/Simb.erella)
+- GitHub: [@SimbaWANGU](https://github.com/SimbaWANGU)
+- Twitter: [@simb_erella](https://twitter.com/simb_erella)
+- LinkesIn: [Simba Wangulu](https://www.linkedin.com/in/simba-wangulu/)
 
 
 ## 🤝 Contributing
